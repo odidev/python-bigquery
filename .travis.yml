@@ -1,5 +1,7 @@
 os: linux
 language: python
-
+arch:
+  - amd64
+  - arm64
 install: pip install nox
 script: travis_wait 30 nox
