@@ -1,38 +1,5 @@
 os: linux
 language: python
 
-jobs:
-  include:
-    - os: linux
-      python: 3.7
-      arch: amd64
-      group: edge
-      virt: lxd
-    - os: linux
-      python: 3.8
-      arch: amd
-      group: edge
-      virt: lxd
-    - os: linux
-      python: 3.9
-      arch: amd64
-      group: edge
-      virt: lxd
-    - os: linux
-      python: 3.7
-      arch: arm64-graviton2
-      group: edge
-      virt: lxd
-    - os: linux
-      python: 3.8
-      arch: arm64-graviton2
-      group: edge
-      virt: lxd
-    - os: linux
-      python: 3.9
-      arch: arm64-graviton2
-      group: edge
-      virt: lxd
-      
 install: pip install nox
 script: travis_wait 30 nox
