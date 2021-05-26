@@ -35,4 +35,4 @@ jobs:
       virt: lxd
       
 install: pip install nox
-script: nox
+script: travis_wait 30 nox
